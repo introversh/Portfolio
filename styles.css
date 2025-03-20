@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body ::-webkit-scrollbar{
+    display: none;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 5%;
+}
+.container{
+    border: 2px solid #222;
+    border-radius: 20px;
+    background-color: black;
+    margin: 5%;
+    width: auto;
+    max-width: 350px;
+    height: auto;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    padding: 15px;
+    input{
+        height: 30px;
+        width: 100%;
+        font-size: 10px;
+        padding: 10px;
+        color: goldenrod;
+    }
+    textarea{
+        padding: 10px;
+        min-height: 50px;
+        font-size: 10px;
+        width: 100%;
+        color: rgb(207, 197, 172);
+        overflow: scroll;
+    }
+}
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2px 2px #111;
+}
+.container h1{
+    font-family: "Rubik";
+    font-size: 28px;
+    color: #ddd;
+}
+.container h3{
+    font-size: 18px;
+    color: goldenrod;
+}
+.pfp{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.pfp img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.stile{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(1, 1, 36);
+    transition: transform 0.3s ease-in-out;
+}
+.stile:hover{
+    transform: scale(1.2);
+}
+.stile img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.resume-btn {
+    padding: 6px 10px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+.resume-btn:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+}
+.projects{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-top: 0;
+    justify-content: space-between;
+    padding: 10px;
+    row-gap: 50px;
+    a{
+        text-decoration: none;
+    }
+}
+.pjtile{
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    h3{
+        font-size: 10px;
+        font-family: "Rubik";
+    }
+}
+.pjtile:hover{
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.7);
+}
+.pjtile img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.contact{
+width: 320px;
+height: 70px;    
+background-color: #ffffff00;
+}
+.contactBtn{
+    font-family: "Rubik";
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    padding: auto;
+    line-height: 0;
+    background-color: goldenrod;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+}
+.contactBtn:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px  orange;
+}
+.inputDiv{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+.container input,textarea{
+    background-color: #ffffff00;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+.submitBtnDiv{
+    width: 100px;
+    height: 40px;
+}
+.submitBtn{
+    font-family: "Rubik";
+    font-size: 12px;
+    height: 40px;
+    width: 100%;
+    padding: auto;
+    line-height: 0;
+    background-color: goldenrod;
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+}
+.submitBtn:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px  orange;
+    color: black;
+} 
+#contactContainer{
+    display:none;
+    text-align: left;
+}
+
+
+
+
+
+
+.type{
+    color: grey;
+}
+.starry-night {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: black;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: twinkle 3s infinite alternate ease-in-out;
+}
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: 500px;
+        margin: 5%;
+        padding: 10px;
+    }
+    .pfp {
+        width: 70px;
+        height: 70px;
+    }
+    .container h1 {
+        font-size: 24px;
+    }
+    .container h3 {
+        font-size: 16px;
+    }
+    .stile {
+        height: 28px;
+        width: 28px;
+    }
+    .resume-btn {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .projects{
+        justify-content: space-between;
+        gap: 10%;
+        row-gap: 80px;
+    }
+    .pjtile {
+        width: 100px;
+        height: 100px;
+    }
+}
