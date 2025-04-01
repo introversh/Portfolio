@@ -23,8 +23,8 @@ app.post("/", async (req,res)=>{
     }
     try {
         const newMessage = new Message({ name, email, message });
-        await newMessage.save(); 
-        await sendThankYouEmail(email, name);
+        await Promise.all([newMessage.save(),
+        sendThankYouEmail(email, name)]);
         res.json({ message: "Your message has been received", data: newMessage });
     } catch (error) {
         res.status(500).json({ error: "Failed to save message" });

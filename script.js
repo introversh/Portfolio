@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
  
     document.querySelector("form").addEventListener("submit", async (evt) => {
+        dabba.style.display = "none";
+            home.style.display = "flex";
         evt.preventDefault();
         console.log("Form submit event triggered");
 
@@ -66,8 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
             naam.value = "";
             email.value = "";
             message.value = "";
-            dabba.style.display = "none";
-            home.style.display = "flex";
         } catch (error) {
             console.error("Error sending message:", error);
         }
