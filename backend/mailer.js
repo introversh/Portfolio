@@ -15,7 +15,8 @@ const sendThankYouEmail = async (toEmail, userName) => {
             from: process.env.EMAIL_USER,
             to: toEmail,
             subject: "Thank You for Contacting Us!",
-            text: `Hi ${userName},\n\nThank you for reaching out. We have received your message and appreciate your words.\n\nBest regards,\nYour Website Team`
+            text: `Good morrow, ${userName},\n\nI doth thank thee most graciously for thy kind missive. Verily, thy message hath been received, and I shall attend to it anon.\n\nWith sincerest regards,\nThy Devoted Brotheren!`
+
         };
 
         const info = await transporter.sendMail(mailOptions);

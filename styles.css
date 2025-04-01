@@ -244,7 +244,7 @@ background-color: #ffffff00;
     background: white;
     border-radius: 50%;
     opacity: 0.2;
-    animation: twinkle 3s infinite alternate ease-in-out;
+    animation: twinkle 1s infinite alternate ease-in-out;
 }
 @keyframes twinkle {
     0%, 100% { opacity: 0.2; transform: scale(0.8); }
