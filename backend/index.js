@@ -8,7 +8,7 @@ const PORT = process.env.PORT||3000;
 const Message = require("./models/Message"); 
 const sendThankYouEmail = require("./mailer");
 app.use(cors({
-    origin: "https://introversh.onrender.com/", 
+    origin: "https://introversh.onrender.com", 
     methods: "GET,POST",
     credentials: true
 }));
