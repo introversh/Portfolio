@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         try {
-            const response = await fetch("http://localhost:3000/", {
+            const response = await fetch("https://portfolio-vt6d.onrender.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
