@@ -19,7 +19,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000', {
+      const response = await fetch('https://portfolio-urt8.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',  // Set the content type to JSON
